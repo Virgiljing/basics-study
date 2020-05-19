@@ -1,4 +1,4 @@
-package com.virgilin.basics.lambda;
+package com.virgilin.basic.lambda;
 
 /**
  * Lambda 表达式，也可称为闭包，它是推动 Java 8 发布的最重要新特性。

@@ -1,7 +1,13 @@
-package com.virgilin.basic.written.guandiangudong;
+package com.virgilin.basic.written.guandianhudong;
 
 import java.util.Arrays;
 
+/**
+ * 请使用JavaScript，Java， C++ 中的任意一门语言解答以下题目 时间两个小时，请解答好以后发过来演示工程
+ * 1. Given an array of ints = [6, 4, -3, 5, -2, -1, 0, 1, -9], implement a function
+ * to move all positive numbers to the left, and move all negative numbers to the right.
+ * Try your best to make its time complexity to O(n), and space complexity to O(1).
+ */
 public class Question1 {
     public static void main(String[] args) {
         Integer[] arr =  {6, 4, -3, 5, -2, -1, 0, 1, -9};

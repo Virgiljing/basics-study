@@ -1,4 +1,4 @@
-package com.virgilin.basic.written.guandiangudong;
+package com.virgilin.basic.written.guandianhudong;
 
 import java.util.*;
 /**
@@ -42,6 +42,26 @@ class Dict{
     }
 }
 
+/**
+ * 2. Given a “flatten” dictionary object, whose keys are dot-separated.
+ * For example, { ‘A’: 1, ‘B.A’: 2, ‘B.B’: 3, ‘CC.D.E’: 4, ‘CC.D.F’: 5}.
+ * Implement a function to transform it to a “nested” dictionary object.
+ * In the above case, the nested version is like:
+ * {
+ *   ‘A’: 1,
+ *   ‘B’: {
+ *     ‘A’: 2,
+ *     ‘B’: 3
+ *   },
+ *   ‘CC’: {
+ *     ‘D’: {
+ *       ‘E’: 4,
+ *       ‘F’: 5
+ *     }
+ *   }
+ * }
+ * It’s guaranteed that no keys in dictionary are prefixes of other keys.
+ */
 public class Question2 {
     public static void main(String[] args) {
         //{ ‘A’: 1, ‘B.A’: 2, ‘B.B’: 3, ‘CC.D.E’: 4, ‘CC.D.F’: 5}

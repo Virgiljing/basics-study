@@ -1,6 +1,9 @@
 package com.virgilin.basic.lambda;
 
 public class Java8Tester {
+
+
+
    public static void main(String args[]){
       Java8Tester tester = new Java8Tester();
         

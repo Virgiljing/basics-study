@@ -27,5 +27,7 @@ public class ThreadLocalTest {
         });
         t1.start();
         t2.start();
+
+
     }
 }

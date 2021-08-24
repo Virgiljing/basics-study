@@ -30,7 +30,7 @@ import java.util.Map;
  *     |--Hashtable:底层是哈希表数据结构，不可以存入null键null值。该集合是线程同步的。jdk1.0效率低
  *     |--HashMap:底层是哈希表数据结构，允许使用null键null值，该集合是不同步的。jdk1.2效率高
  *     |--TreeMap:底层是二叉树数据结构。线程不同步，可以用于给Map集合中的键进行排序
- * 和Set很想
+ * 和Set很像
  * Set底层就是使用Map集合。
  */
 public class MapDemo {

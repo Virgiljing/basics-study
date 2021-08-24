@@ -25,9 +25,9 @@ public class CollectionsDemo {
 			mid = (max+min)>>1;
 			String str = list.get(mid);
 			num = com.compare(str, key);
-			if (num>0) {
+			if (num<0) {
 				max = mid - 1;
-			}else if (num<0) {
+			}else if (num>0) {
 				min = mid + 1;
 			}else {
 				return mid;
@@ -64,8 +64,9 @@ public class CollectionsDemo {
 		list.add("bcsfd");
 		Collections.sort(list);
 		System.out.println(list);
-		//int index = Collections.binarySearch(list,"ss");
-		int index = halfSearch(list, "sdff",new StrLenComParator1());
+		int binarySearch = Collections.binarySearch(list,"ss");
+		int index = halfSearch(list, "ss",new StrLenComParator1());
+		System.out.println(binarySearch);
 		System.out.println(index);
 	}
 	public static void maxDemo() {
@@ -82,6 +83,7 @@ public class CollectionsDemo {
 	public static void sortDemo() {
 		List<String> list = new ArrayList<>();
 		list.add("ss");
+		list.add("sa");
 		list.add("gasdg");
 		list.add("sdf");
 		list.add("aadsfaa");
@@ -97,7 +99,7 @@ class StrLenComParator1 implements Comparator<String>{
 
 	@Override
 	public int compare(String o1, String o2) {
-		int num = o2.length()-o1.length();
+		int num = o1.length()-o2.length();
 		if (num == 0) {
 			num = o1.compareTo(o2);
 		}

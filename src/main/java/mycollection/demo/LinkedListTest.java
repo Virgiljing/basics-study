@@ -10,7 +10,7 @@ import java.util.LinkedList;
  */
 public class LinkedListTest {
 	public static void main(String[] args) {
-		myQueue<String> queue = new myQueue<String>();
+		MyQueue<String> queue = new MyQueue<String>();
 		queue.myAdd("java01");
 		queue.myAdd("java02");
 		queue.myAdd("java03");
@@ -21,9 +21,9 @@ public class LinkedListTest {
 	}
 }
 
-class myQueue<E>{
+class MyQueue<E>{
 	private LinkedList<E> link;
-	myQueue(){
+	MyQueue(){
 		link = new LinkedList<>();
 	}
 	public void myAdd(E e) {

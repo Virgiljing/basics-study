@@ -1,9 +1,11 @@
 package threaddemo.threadpool.runnable;
 
-import playWithDataStructuresRonglexie.queue.LinkedList;
+
 import threaddemo.threadpool.DenyPolicy;
 import threaddemo.threadpool.RunnableQueue;
 import threaddemo.threadpool.ThreadPool;
+
+import java.util.LinkedList;
 
 public class LinkendRunnableQueue implements RunnableQueue {
     /**
@@ -38,7 +40,7 @@ public class LinkendRunnableQueue implements RunnableQueue {
     @Override
     public void offer(Runnable runnable) {
         synchronized (runnableLinkedList){
-            if (runnableLinkedList.getSize() >= limit) {
+            if (runnableLinkedList.size() >= limit) {
                 this.denyPolicy.reject(runnable,threadPool);
             }else {
                 runnableLinkedList.addLast(runnable);
@@ -67,7 +69,7 @@ public class LinkendRunnableQueue implements RunnableQueue {
     @Override
     public int size() {
         synchronized (runnableLinkedList){
-            return runnableLinkedList.getSize();
+            return runnableLinkedList.size();
         }
     }
 }

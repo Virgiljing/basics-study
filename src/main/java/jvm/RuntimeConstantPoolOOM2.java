@@ -1,5 +1,9 @@
 package jvm;
 
+/**
+ * jdk6 false,false
+ * > jkd7 true ,false
+ */
 public class RuntimeConstantPoolOOM2 {
     public static void main(String[] args) {
         String str1 = new StringBuilder("计算机").append("软件").toString();

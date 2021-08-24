@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>pattern2.chainOfResp.cainiao</OriginalElement>
+  <nodes>
+    <node x="0.0" y="240.0">pattern2.chainOfResp.cainiao.FileLogger</node>
+    <node x="0.0" y="359.0">pattern2.chainOfResp.cainiao.ChainPatternDemo</node>
+    <node x="338.0" y="240.0">pattern2.chainOfResp.cainiao.ErrorLogger</node>
+    <node x="136.5" y="0.0">pattern2.chainOfResp.cainiao.AbstractLogger</node>
+    <node x="161.0" y="240.0">pattern2.chainOfResp.cainiao.ConsoleLogger</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pattern2.chainOfResp.cainiao.ConsoleLogger" target="pattern2.chainOfResp.cainiao.AbstractLogger">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="95.0" />
+    </edge>
+    <edge source="pattern2.chainOfResp.cainiao.FileLogger" target="pattern2.chainOfResp.cainiao.AbstractLogger">
+      <point x="0.0" y="-37.0" />
+      <point x="70.5" y="215.0" />
+      <point x="170.83333333333331" y="215.0" />
+      <point x="-68.66666666666669" y="95.0" />
+    </edge>
+    <edge source="pattern2.chainOfResp.cainiao.ErrorLogger" target="pattern2.chainOfResp.cainiao.AbstractLogger">
+      <point x="0.0" y="-37.0" />
+      <point x="408.5" y="215.0" />
+      <point x="308.1666666666667" y="215.0" />
+      <point x="68.66666666666669" y="95.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="698.5" y="249.5" />
+  <SelectedNodes>
+    <node>pattern2.chainOfResp.cainiao.FileLogger</node>
+    <node>pattern2.chainOfResp.cainiao.ChainPatternDemo</node>
+    <node>pattern2.chainOfResp.cainiao.ErrorLogger</node>
+    <node>pattern2.chainOfResp.cainiao.AbstractLogger</node>
+    <node>pattern2.chainOfResp.cainiao.ConsoleLogger</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

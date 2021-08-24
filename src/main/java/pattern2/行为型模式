@@ -1,0 +1,23 @@
+行为型模式
+这些设计模式特别关注对象之间的通信。
+
+1.责任链模式（Chain of Responsibility Pattern）
+    顾名思义，责任链模式（Chain of Responsibility Pattern）为请求创建了一个接收者对象的链。这种模式给予请求的类型，对请求的发送者和接收者进行解耦。这种类型的设计模式属于行为型模式。
+
+2.命令模式（Command Pattern）
+    命令模式（Command Pattern）是一种数据驱动的设计模式，它属于行为型模式。请求以命令的形式包裹在对象中，并传给调用对象。调用对象寻找可以处理该命令的合适的对象，并把该命令传给相应的对象，该对象执行命令。
+
+3.解释器模式（Interpreter Pattern）
+    解释器模式（Interpreter Pattern）提供了评估语言的语法或表达式的方式，它属于行为型模式。这种模式实现了一个表达式接口，该接口解释一个特定的上下文。这种模式被用在 SQL 解析、符号处理引擎等。
+
+4.迭代器模式（Iterator Pattern）
+5.中介者模式（Mediator Pattern）
+6.备忘录模式（Memento Pattern）
+7.观察者模式（Observer Pattern）
+8.状态模式（State Pattern）
+9.空对象模式（Null Object Pattern）
+10.策略模式（Strategy Pattern）
+11.模板模式（Template Pattern）
+    在模板模式（Template Pattern）中，一个抽象类公开定义了执行它的方法的方式/模板。它的子类可以按需要重写方法实现，但调用将以抽象类中定义的方式进行。这种类型的设计模式属于行为型模式。
+
+12.访问者模式（Visitor Pattern）
